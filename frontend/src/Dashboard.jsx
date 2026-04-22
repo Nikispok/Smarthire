@@ -10,7 +10,7 @@ function Dashboard() {
   const [role, setRole] = useState("")
   const [status, setStatus] = useState("")
   const [editingId, setEditingId] = useState(null)
-  const URL = "https://smarthire-kappa.vercel.app/jobs"
+  const URL = "https://smarthire-production-0172.up.railway.app/jobs"
 
   useEffect(() => {
     fetch(URL, {
@@ -77,7 +77,7 @@ function Dashboard() {
   } 
 
   const getAdvice = async (job) => {
-    const res = await fetch("https://smarthire-kappa.vercel.app/ai-adv", {
+    const res = await fetch("https://smarthire-production-0172.up.railway.app/ai-adv", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
