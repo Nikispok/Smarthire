@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Register = () =>{
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const URL = "http://localhost:8000/auth/register";
+    const URL = "https://smarthire-kappa.vercel.app/auth/register";
     const navigate = useNavigate();
 
     async function HandleSubmit(e) {

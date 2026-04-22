@@ -10,7 +10,7 @@ function Dashboard() {
   const [role, setRole] = useState("")
   const [status, setStatus] = useState("")
   const [editingId, setEditingId] = useState(null)
-  const URL = "http://localhost:8000/jobs"
+  const URL = "https://smarthire-kappa.vercel.app/jobs"
 
   useEffect(() => {
     fetch(URL, {
@@ -77,7 +77,7 @@ function Dashboard() {
   } 
 
   const getAdvice = async (job) => {
-    const res = await fetch("http://localhost:8000/ai-adv", {
+    const res = await fetch("https://smarthire-kappa.vercel.app/ai-adv", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
