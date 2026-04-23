@@ -2,7 +2,7 @@ SmartHire — Job Application Tracker
 
 A full-stack web application for tracking job applications with AI-powered career advice.
 
-Live Demo: https://smarthire-jod4yalw3-nikispoks-projects.vercel.app
+Live Demo: https://smarthire-jod4yalw3-nikispoks-projects.vercel.app?_vercel_share=bGTrHYUJOkCCrQZPdLtBeXeVXKSDOjdE
 
 ---
 
