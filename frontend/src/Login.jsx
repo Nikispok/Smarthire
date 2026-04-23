@@ -15,7 +15,7 @@ function Login(){
                 body: JSON.stringify({ email, password })})
 
         const data = await response.json();
-        localStorage.setItem("token", data.replace(/"/g, ''))
+        localStorage.setItem("token", typeof data === "string" ? data.replace(/"/g, '') : data)
         navigate("/dashboard")
         
     }
